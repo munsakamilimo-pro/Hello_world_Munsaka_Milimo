@@ -1,0 +1,5 @@
+file = open("output.txt", "w", encoding="utf-8") 
+file.write("Милимо Мунсака\n") 
+file.write("01.04.2004\n") 
+file.write("4731901/50001\n") 
+file.close()
