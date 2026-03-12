@@ -4,9 +4,11 @@
 ✓ Создан первый удаленный репозиторий.
 ✓ Изучен синтаксис разметки Markdown
 # Моя первая программа
+```
 user_name = "Студент"
 number_a = 10
 number_b = 5
 
 print(f"Привет, {user_name}!")
 print(f"Сумма чисел {number_a} и {number_b} равна {number_a + number_b}")
+```
