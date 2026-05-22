@@ -1,0 +1,6 @@
+root@WIN-PJDFJ47IQU1:~/linux-practice# du -h --max-depth=2 ./
+4.0K    ./images
+8.0K    ./documents/past
+12K     ./documents
+4.0K    ./backups
+24K     ./
