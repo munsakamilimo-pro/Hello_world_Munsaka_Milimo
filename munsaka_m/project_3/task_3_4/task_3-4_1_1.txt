@@ -1,0 +1,5 @@
+root@WIN-PJDFJ47IQU1:/mnt/c/Windows/system32# ls /
+bin                dev   init               lib64       mnt   root  sbin.usr-is-merged  sys  var
+bin.usr-is-merged  etc   lib                lost+found  opt   run   snap                tmp
+boot               home  lib.usr-is-merged  media       proc  sbin  srv                 usr
+root@WIN-PJDFJ47IQU1:/mnt/c/Windows/system32#
