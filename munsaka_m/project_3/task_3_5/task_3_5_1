@@ -1,0 +1,18 @@
+root@WIN-PJDFJ47IQU1:~# wget -v https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/410/535/GCF_000410535.2_ASM41053v2/GCF_000410535.2_ASM41053v2_genomic.fna.gz
+--2026-05-22 21:28:11--  https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/410/535/GCF_000410535.2_ASM41053v2/GCF_000410535.2_ASM41053v2_genomic.fna.gz
+Resolving ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)... 130.14.250.12, 130.14.250.13, 2607:f220:41e:250::11, ...
+Connecting to ftp.ncbi.nlm.nih.gov (ftp.ncbi.nlm.nih.gov)|130.14.250.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 340746 (333K) [application/x-gzip]
+Saving to: ‘GCF_000410535.2_ASM41053v2_genomic.fna.gz’
+
+GCF_000410535.2_ASM41053v 100%[=====================================>] 332.76K   309KB/s    in 1.1s
+
+2026-05-22 21:28:13 (309 KB/s) - ‘GCF_000410535.2_ASM41053v2_genomic.fna.gz’ saved [340746/340746]
+
+root@WIN-PJDFJ47IQU1:~# ls
+GCF_000410535.2_ASM41053v2_genomic.fna.gz  linux-practice
+root@WIN-PJDFJ47IQU1:~# mv GCF_000410535.2_ASM41053v2_genomic.fna.gz Treponema_pallidum.fna.gz
+root@WIN-PJDFJ47IQU1:~# ls
+Treponema_pallidum.fna.gz  linux-practice
+root@WIN-PJDFJ47IQU1:~#
