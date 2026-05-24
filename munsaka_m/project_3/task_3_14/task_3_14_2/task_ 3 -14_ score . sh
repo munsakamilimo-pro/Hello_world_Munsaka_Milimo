@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# Students Score Processing Script
+# Performs filtering and analysis on student grades
+
+STUDENT_FILE="students.txt"
+
+echo "========================================="
+echo "        STUDENT SCORE PROCESSING"
+echo "========================================="
+echo ""
+
+# Check if students.txt exists
+if [ ! -f "$STUDENT_FILE" ]; then
+    echo "ERROR: $STUDENT_FILE not found!"
+    echo "Creating $STUDENT_FILE with sample data..."
+    cat > "$STUDENT_FILE" << 'EOF'
+Ivan 78
+Maria 92
+Oleg 67
+Anna 85
+EOF
+    echo "File created successfully."
+    echo ""
+fi
+
+# Display original content for reference
+echo "Original student data:"
+echo "-----------------------------------"
+cat "$STUDENT_FILE"
+echo "-----------------------------------"
+echo ""
+
+# Task 1: Display students with score above 80
+echo "1. Students with score ABOVE 80:"
+echo "-----------------------------------"
+awk '$2 > 80' "$STUDENT_FILE"
+# Alternative: while read name grade; do if [ $grade -gt 80 ]; then echo "$name $grade"; fi; done < students.txt
+echo ""
+
+# Task 2: Remove students with score below 70
+echo "2. Students AFTER removing those with score BELOW 70:"
+echo "-----------------------------------"
+awk '$2 >= 70' "$STUDENT_FILE"
+# Alternative: sed -i '/ [0-6][0-9]$/d' students.txt (to actually remove from file)
+echo "(Note: Original file remains unchanged. This shows filtered data)"
+echo ""
+
+# Task 3: Print only the first line of the file
+echo "3. First line of the file:"
+echo "-----------------------------------"
+head -n 1 "$STUDENT_FILE"
+# Alternative: sed -n '1p' students.txt
+# Alternative: awk 'NR==1' students.txt
+echo ""
+
+echo "========================================="
+echo "           PROCESSING COMPLETE"
+echo "========================================="
